@@ -1,4 +1,4 @@
-t2 - make basic add and delete operation from create
+
 t3 - add quantitiy and based on that update total prize
 t4 - add the buy option to user and redirect to payment page
 t5 - create header and footer for the application
@@ -18,3 +18,4 @@ t13 - redirect the user to login if he is not registered
 Completed
 
 t1 - create storage for inventory and cart
+t2 - make basic add and delete operation from cart
