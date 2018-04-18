@@ -1,0 +1,20 @@
+t2 - make basic add and delete operation from create
+t3 - add quantitiy and based on that update total prize
+t4 - add the buy option to user and redirect to payment page
+t5 - create header and footer for the application
+t6 - create new payment screen
+t7 - divide application in components
+t8 - add routing in your application
+t9 - provide screen to show the details of item on click
+t10 - add bootstrap and give the complete design to application
+t11 - update the inventory with proper content
+
+optional
+t12 - add the registaration and login page 
+t13 - redirect the user to login if he is not registered
+
+
+
+Completed
+
+t1 - create storage for inventory and cart

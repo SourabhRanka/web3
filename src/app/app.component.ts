@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  inventory = [
+    {
+      "name": 'item1',
+      "price" : 30,
+      "quantity" : 0
+    },
+    {
+      "name": 'item2',
+      "price" : 40,
+      "quantity" : 0
+    },
+  
+    {
+      "name": 'item3',
+      "price" : 50,
+      "quantity" : 0
+    }];
+  
+    cart = [];
+  
 }
