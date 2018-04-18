@@ -29,16 +29,27 @@ export class AppComponent {
     }];
   
     cart = [];
+    totalPrize = 0;
+
+
 
     addToCart(index){
       this.cart.push(this.inventory[index]);
       this.inventory[index].selected = true;
+      this.updateTotalPrize();
     }
     removeFromCart(index){
       this.inventory[index].quantity = 0;
       let i = this.cart.indexOf(this.inventory[index]);
       this.cart.splice(i,1);
       this.inventory[index].selected = false;
+      this.updateTotalPrize();
+    }
+    updateTotalPrize(){
+      this.totalPrize = 0;
+      this.inventory.forEach(item => {
+        this.totalPrize = this.totalPrize +  item.price * item.quantity;
+      });
     }
   
 }

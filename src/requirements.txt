@@ -1,5 +1,4 @@
 
-t3 - add quantitiy and based on that update total prize
 t4 - add the buy option to user and redirect to payment page
 t5 - create header and footer for the application
 t6 - create new payment screen
@@ -19,3 +18,4 @@ Completed
 
 t1 - create storage for inventory and cart
 t2 - make basic add and delete operation from cart
+t3 - calculate and update total prize
