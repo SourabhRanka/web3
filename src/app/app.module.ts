@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PaymentComponent } from './payment/payment.component';
 import { HomeComponent } from './home/home.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PaymentSuccessComponent } from './payment-success/payment-success.compo
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

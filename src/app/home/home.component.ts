@@ -30,9 +30,6 @@ export class HomeComponent  {
 
   cart = [];
   totalPrize = 0;
-  checkout = false;
-
-
 
   addToCart(index) {
     this.cart.push(this.inventory[index]);

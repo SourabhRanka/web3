@@ -9,8 +9,6 @@ export class PaymentComponent implements OnInit {
 
   constructor() { }
 
-  success : boolean = false;
-
   ngOnInit() {
   }
 

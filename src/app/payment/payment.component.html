@@ -1,5 +1,3 @@
-<div *ngIf='!success'>
-
   <!-- CREDIT CARD FORM STARTS HERE -->
   <div class="panel panel-default credit-card-box">
     <div class="panel-heading display-table">
@@ -52,7 +50,10 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
+           <a routerLink="/success">
             <button class="subscribe btn btn-success btn-lg btn-block" type="button" (click)='success= true'>Confirm Payment</button>
+           </a>
+            
           </div>
         </div>
         <div class="row" style="display:none;">
@@ -64,6 +65,4 @@
     </div>
   </div>
   <!-- CREDIT CARD FORM ENDS HERE -->
-</div>
 
-<app-payment-success *ngIf='success'></app-payment-success>
