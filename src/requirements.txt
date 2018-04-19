@@ -1,5 +1,4 @@
 
-t7 - create payment successful screen
 t8 - add routing in your application
 t9 - provide screen to show the details of item on click
 t10 - add bootstrap and give the complete design to application
@@ -19,3 +18,4 @@ t3 - calculate and update total prize
 t4 - add the buy option to user and redirect to checkout page
 t5 - create header and footer for the application
 t6 - divide application in components 
+t7 - create payment successful screen
