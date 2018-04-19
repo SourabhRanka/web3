@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaymentComponent } from './payment/payment.component';
 import { HomeComponent } from './home/home.component';
+import { PaymentSuccessComponent } from './payment-success/payment-success.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     FooterComponent,
     PaymentComponent,
-    HomeComponent
+    HomeComponent,
+    PaymentSuccessComponent
   ],
   imports: [
     BrowserModule,
