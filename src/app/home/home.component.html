@@ -1,37 +1,34 @@
-<div *ngIf='!checkout'>
+<!-- showing inventory items -->
 
-  <!-- showing inventory items -->
-
-  <div>
-    <li *ngFor="let item of inventory; let i = index">
-      {{item.name}}
-      <p>Price : {{item.price}}</p>
-      <span>Quantity : </span>
-      <input type="number" min="0" [(ngModel)]='item.quantity'>
-      <button *ngIf='!item.selected' (click)='addToCart(i)'>Add to Cart</button>
-      <button *ngIf='item.selected' (click)='removeFromCart(i)'>Remove from Cart</button>
-      <div>
-        <br>
-      </div>
-    </li>
-
-  </div>
-
-  <!-- showing cart items -->
-  <div>
-    <li *ngFor="let item of cart; ">
-      {{item.name}}
-    </li>
-  </div>
-
-
-  <!-- Total Prize -->
-  <br>
-  <div>Total Prize : {{totalPrize}}</div>
-  <div>
-    <input type="button" value="Buy Now" (click)='checkout = true'>
-  </div>
+<div>
+  <li *ngFor="let item of inventory; let i = index">
+    {{item.name}}
+    <p>Price : {{item.price}}</p>
+    <span>Quantity : </span>
+    <input type="number" min="0" [(ngModel)]='item.quantity'>
+    <button *ngIf='!item.selected' (click)='addToCart(i)'>Add to Cart</button>
+    <button *ngIf='item.selected' (click)='removeFromCart(i)'>Remove from Cart</button>
+    <div>
+      <br>
+    </div>
+  </li>
 
 </div>
 
-<app-payment *ngIf='checkout'></app-payment>
+<!-- showing cart items -->
+<div>
+  <li *ngFor="let item of cart; ">
+    {{item.name}}
+  </li>
+</div>
+
+
+<!-- Total Prize -->
+<br>
+<div>Total Prize : {{totalPrize}}</div>
+<div>
+  <a routerLink="/checkout">
+    <input type="button" value="Buy Now" (click)='checkout = true'>
+  </a>
+</div>
+
