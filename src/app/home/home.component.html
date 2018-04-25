@@ -1,34 +1,41 @@
-<!-- showing inventory items -->
+<div class='container'>
 
-<div>
-  <li *ngFor="let item of inventory; let i = index">
-    <a routerLink='/item/{{i+1}}'>{{item.name}}</a>
-    <p>Price : {{item.price}}</p>
-    <span>Quantity : </span>
-    <input type="number" min="0" [(ngModel)]='item.quantity'>
-    <button *ngIf='!item.selected' (click)='addToCart(i)'>Add to Cart</button>
-    <button *ngIf='item.selected' (click)='removeFromCart(i)'>Remove from Cart</button>
-    <div>
+  <!-- showing inventory items -->
+
+<div class='column middle'>
+    <li class='item' *ngFor="let item of inventory; let i = index">
+      <img src="assets/shirts/{{item.imagename}}" alt="image not found" height="150px" width="150px">
+      <a routerLink='/item/{{i+1}}'>{{item.name}}</a>
+      <p>Price : {{item.price}}</p>
+      <span>Quantity : </span>
+      <input type="number" min="0" [(ngModel)]='item.quantity'>
+      <button *ngIf='!item.selected' (click)='addToCart(i)'>Add to Cart</button>
+      <button *ngIf='item.selected' (click)='removeFromCart(i)'>Remove from Cart</button>
+      <div>
+        <br>
+      </div>
+    </li>
+  
+  </div>
+  
+  <!-- showing cart items -->
+  <!-- <div>
+    <li *ngFor="let item of cart; ">
+      {{item.name}}
+    </li>
+  </div> -->
+  
+  
+  <!-- Total Prize -->
+  <div class='column side'>
       <br>
-    </div>
-  </li>
-
+      <div>Total Prize : {{totalPrize}}</div>
+      <div>
+        <a routerLink="/checkout">
+          <input type="button" value="Buy Now" (click)='checkout = true'>
+        </a>
+      </div>
+  </div>
+  
+  
 </div>
-
-<!-- showing cart items -->
-<div>
-  <li *ngFor="let item of cart; ">
-    {{item.name}}
-  </li>
-</div>
-
-
-<!-- Total Prize -->
-<br>
-<div>Total Prize : {{totalPrize}}</div>
-<div>
-  <a routerLink="/checkout">
-    <input type="button" value="Buy Now" (click)='checkout = true'>
-  </a>
-</div>
-

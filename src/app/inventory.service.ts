@@ -9,14 +9,16 @@ export class InventoryService {
       "price": 30,
       "quantity": 0,
       "selected": false,
-      "description" : "this is item1"
+      "description" : "this is item1",
+      "imagename" : "shirt1.jpeg"
     },
     {
       "name": 'item2',
       "price": 40,
       "quantity": 0,
       "selected": false,
-      "description" : "this is item2"
+      "description" : "this is item2",
+      "imagename" : "shirt2.jpeg"
     },
 
     {
@@ -24,7 +26,8 @@ export class InventoryService {
       "price": 50,
       "quantity": 0,
       "selected": false,
-      "description" : "this is item3"
+      "description" : "this is item3",
+      "imagename" : "shirt3.jpeg"
     }];
 
 
