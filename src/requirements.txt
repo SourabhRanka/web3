@@ -1,4 +1,3 @@
-t9 - provide screen to show the details of item on click
 t10 - add bootstrap and give the complete design to application
 t11 - update the inventory with proper content
 
@@ -18,3 +17,4 @@ t5 - create header and footer for the application
 t6 - divide application in components 
 t7 - create payment successful screen
 t8 - add routing in your application
+t9 - provide screen to show the details of item on click
