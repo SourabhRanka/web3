@@ -10,6 +10,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { HomeComponent } from './home/home.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     PaymentComponent,
     HomeComponent,
-    PaymentSuccessComponent
+    PaymentSuccessComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

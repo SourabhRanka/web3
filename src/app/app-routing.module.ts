@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'checkout', component: PaymentComponent },
-  { path: 'success', component: PaymentSuccessComponent }
+  { path: 'success', component: PaymentSuccessComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 
