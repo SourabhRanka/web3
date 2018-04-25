@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryService } from '../inventory.service';
 
 @Component({
   selector: 'app-home',
@@ -7,27 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent  {
 
-  inventory = [
-    {
-      "name": 'item1',
-      "price": 30,
-      "quantity": 0,
-      "selected": false
-    },
-    {
-      "name": 'item2',
-      "price": 40,
-      "quantity": 0,
-      "selected": false
-    },
+  constructor(private inventoryserv : InventoryService){
 
-    {
-      "name": 'item3',
-      "price": 50,
-      "quantity": 0,
-      "selected": false
-    }];
+  }
 
+  ngOnInit(){
+    this.inventory = this.inventoryserv.getInventory();
+  }
+  inventory = [];
   cart = [];
   totalPrize = 0;
 

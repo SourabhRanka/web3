@@ -2,7 +2,7 @@
 
 <div>
   <li *ngFor="let item of inventory; let i = index">
-    {{item.name}}
+    <a routerLink='/item/{{i+1}}'>{{item.name}}</a>
     <p>Price : {{item.price}}</p>
     <span>Quantity : </span>
     <input type="number" min="0" [(ngModel)]='item.quantity'>

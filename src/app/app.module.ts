@@ -10,6 +10,8 @@ import { PaymentComponent } from './payment/payment.component';
 import { HomeComponent } from './home/home.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ItemDetailsComponent } from './item-details/item-details.component';
+import { InventoryService } from './inventory.service';
 
 
 @NgModule({
@@ -19,14 +21,15 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     PaymentComponent,
     HomeComponent,
-    PaymentSuccessComponent
+    PaymentSuccessComponent,
+    ItemDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [InventoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
