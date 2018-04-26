@@ -1,6 +1,6 @@
 optional
-t12 - add the registaration and login page 
-t13 - redirect the user to login if he is not registered
+t12 - add the login and logout functionality
+
 
 
 

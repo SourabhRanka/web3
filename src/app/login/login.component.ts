@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     if (this.login.name === this.credentials.name && this.login.password === this.credentials.password) {
       alert('Login Successful');
       this.submitted = true;
-      this.router.navigate(['/']);
+      this.router.navigate(['/home']);
     }
     else {
       alert('Login Failed, Please try again ');

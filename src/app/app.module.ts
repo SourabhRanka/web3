@@ -10,12 +10,11 @@ import { PaymentComponent } from './payment/payment.component';
 import { HomeComponent } from './home/home.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component';
 import { AppRoutingModule } from './app-routing.module';
-<<<<<<< HEAD
 import { LoginComponent } from './login/login.component';
-=======
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { InventoryService } from './inventory.service';
->>>>>>> master
+
+
 
 
 @NgModule({
@@ -26,11 +25,8 @@ import { InventoryService } from './inventory.service';
     PaymentComponent,
     HomeComponent,
     PaymentSuccessComponent,
-<<<<<<< HEAD
-    LoginComponent
-=======
+    LoginComponent,
     ItemDetailsComponent
->>>>>>> master
   ],
   imports: [
     BrowserModule,
