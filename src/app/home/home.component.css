@@ -5,24 +5,26 @@
 
 }
 
-.column {
-    float: left;
-    padding: 10px;
+li {
+    list-style-type: none;
 }
 
-/* Left and right column */
-.column.side {
-    width: 25%;
+.item-name{
+      margin-left: 50px;
 }
 
-/* Middle column */
-.column.middle {
-    width: 70%;
+.cart-btn{
+    margin-top:10px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.item-sub{
+    margin-top:32px;
+}
+
+input[type=number]{
+    width: 45px;
+}
+
+.home{
+    margin-bottom: 50px;
 }

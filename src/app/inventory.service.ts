@@ -5,30 +5,31 @@ export class InventoryService {
 
   inventory = [
     {
-      "name": 'item1',
+      "name": 'shirt-1',
       "price": 30,
       "quantity": 0,
       "selected": false,
-      "description" : "this is item1",
+      "description" : "US Polo Kids Boys Solid Casual Shirt",
       "imagename" : "shirt1.jpeg"
     },
     {
-      "name": 'item2',
+      "name": "shirt-2",
       "price": 40,
       "quantity": 0,
       "selected": false,
-      "description" : "this is item2",
+      "description" : "Deeksha Men's Solid Casual Button Down Shirt",
       "imagename" : "shirt2.jpeg"
     },
 
     {
-      "name": 'item3',
+      "name": "shirt-3",
       "price": 50,
       "quantity": 0,
       "selected": false,
-      "description" : "this is item3",
+      "description" : "Raymond Men's Solid Casual Button Down Shirt",
       "imagename" : "shirt3.jpeg"
-    }];
+    },
+  ];
 
 
   constructor() { }
