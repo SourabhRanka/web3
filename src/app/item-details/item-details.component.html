@@ -1,7 +1,17 @@
-<div>
-  
-    {{inventory[routeParams.id-1].name}}
-    <p>Price : {{inventory[routeParams.id-1].price}}</p>
-    <p>Description : {{inventory[routeParams.id-1].description}}</p>
-    <a routerLink='/'><button >Back To Catalog</button></a>
+<div class='row'>
+    <div class='col-md-8'>
+        <img src="assets/shirts/{{inventory[routeParams.id-1].imagename}}" alt="image not found" height="400px" width="400px">
+    </div>
+
+    <div  class='col-md-4 item-details'>
+        <h1>
+            {{inventory[routeParams.id-1].name}}
+        </h1>
+        <h3>Rs : {{inventory[routeParams.id-1].price}}</h3>
+        <h4>{{inventory[routeParams.id-1].description}}</h4>
+        <a routerLink='/'>
+            <button class='btn btn-primary'>Back To Catalog</button>
+        </a>
+    </div>
+
 </div>
